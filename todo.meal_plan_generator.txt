@@ -1,0 +1,22 @@
+MY PROJECT -*- mode: org -*-
+#+title: Recipe generator python
+#+author: Samuel Attwell
+
+* Layout
+
+** DONE Welcome
+- This is a recipe generator
+- Will allow you to enter a recipe and then generate a weekly plan based on some parameters
+** DONE Enter a recipe
+- Name of recipe
+- Set parameter: meat; fish; dairy; veg
+- Veg
+- Meat / fish
+- Dairy
+- Dried / canned
+- Frozen
+- Other
+** TODO Generate a randomised list of recipies
+- Random
+- Favour parameters
+** TODO Save to text file
