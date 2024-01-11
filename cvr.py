@@ -14,15 +14,16 @@
 #                continue
 #            else:
 #                break
+valid = 0
 
 def cvr(yn):
+    global valid
     while True:
         try:
             if yn == "n":
-                more = 0
-
-            elif valid == "y":
-                more = 1
+                valid = 0
+            elif yn == "y":
+                valid = 1
             else:
                 valid = "incorrect input"
 
@@ -31,11 +32,9 @@ def cvr(yn):
         except ValueError:
             print("ERROR! You must enter \"y\" for yes and \"n\" for no")
             continue
-
         else:
             break
 
-yn = input()
-print(yn)
 
-cvr()
+cvr(yn = input())
+print(valid)
